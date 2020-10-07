@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<math.h>
-//#include<calculator_operations.h>
 int add(int operand1, int operand2){
     return operand1+operand2;
 }
@@ -16,9 +15,6 @@ int divide(int operand1, int operand2){
 int modulus(int operand1, int operand2){
     return operand1%operand2;
 }
-/*int sqrt(int operand1){
-    return 1;
-}*/
 int factorial(int operand1){
     if(operand1==1) return 1;
     else{
@@ -36,6 +32,10 @@ void main(){
     while(menu){
         printf("Choose an operation:\n1=Addition\n2=Subtraction\n3=Multiplication\n4=Division\n5=Modulus\n6=Square root\n7=Permutation\n8=Combination\n9=clear\n0=Exit\n");
         scanf("%d",&menu);
+        if(menu==9){
+        	operand1=0;
+        	continue;
+        }
         if(menu==6){
             if(operand1==0){
             printf("Enter the number : ");
@@ -80,6 +80,7 @@ void main(){
                             result=combination(operand1,operand2);
                         }
                         break;
+                case 0: return;
             }
             printf("%d\n",result);
             operand1=result;
