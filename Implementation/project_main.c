@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-#include<calculator_operations.c>
+#include<calculator_operations.h>
 void main(){
     int menu=1,operand1=0,operand2=0,result=0;
     while(menu){
