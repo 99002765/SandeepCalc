@@ -70,3 +70,18 @@ void test_subtract(void) {
  void test_multiply(void) {
   CU_ASSERT(84 == multiply(14, 6));
  }
+void test_divide(void) {
+  CU_ASSERT(3 == divide(51, 17));
+ }
+void test_modulus(void) {
+  CU_ASSERT(2 == modulus(14, 3));
+ }
+void test_sqrt(void) {
+  CU_ASSERT(9 == sqrt(81));
+ }
+void test_permutation(void) {
+  CU_ASSERT(20 == permutation(5, 2));
+ }
+void test_combiantion(void) {
+  CU_ASSERT(10 == combination(5, 2));
+ }
