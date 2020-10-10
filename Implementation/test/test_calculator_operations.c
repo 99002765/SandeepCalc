@@ -44,10 +44,7 @@ void test_subtract(void) {
   /* Dummy fail*/
   CU_ASSERT(20 == subtract(30, 11));
 }
-void test_subtract(void) {
-  CU_ASSERT(-7 == subtract(5, 12));
- }
- void test_multiply(void) {
+void test_multiply(void) {
   CU_ASSERT(84 == multiply(14, 6));
  }
 void test_divide(void) {
