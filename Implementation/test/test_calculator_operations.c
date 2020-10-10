@@ -59,6 +59,6 @@ void test_sqrt(void) {
 void test_permutation(void) {
   CU_ASSERT(20 == permutation(5, 2));
  }
-void test_combiantion(void) {
+void test_combination(void) {
   CU_ASSERT(10 == combination(5, 2));
  }
